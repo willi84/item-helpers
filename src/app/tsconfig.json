@@ -1,18 +1,14 @@
 {
     "compilerOptions": {
         "skipLibCheck": true,
-        "importHelpers": true,
+        "importHelpers": true,        
         "target": "esnext",
-        "types": ["node", "jest"],
+        "types": ["node", "@types/jest"],
         "module": "commonjs",
-        "typeRoots": ["./node_modules/@types", "./src/app/backend/types"],
         "lib": ["es5", "es6", "dom"],
         "baseUrl": "src", // TODO. ggf. check
-        "rootDir": "src",
+        // "rootDir": "src",
       },
-      "include": [
-        "src/**/*.ts"
-],
       "exclude": [
         "node_modules", "dist"
       ],

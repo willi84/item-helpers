@@ -18,6 +18,7 @@ export const colors = {
     FgCyan : '\x1b[36m',
     FgWhite : '\x1b[37m',
 
+    BgTransparent : '',
     BgBlack : '\x1b[40m',
     BgRed : '\x1b[41m',
     BgGreen : '\x1b[42m',
