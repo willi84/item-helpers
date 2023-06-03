@@ -1,7 +1,22 @@
-import { sample } from "./index";
+import { main } from './main/main';
+const mock = require('mock-fs');
 
-describe('sample module', () => {
-  test('sample()', () => {
-    expect(sample()).toEqual(3);
+describe('main()', () => {
+  beforeEach(() => {
+    // TODO: create files from Object
+    mock({ 
+      'data': {
+        'test': {}
+      },
+      });
   });
+  afterEach(() => {
+    mock.restore();
+    jest.clearAllMocks();
+  });
+  it('run main()', () => {
+    const result = main();
+    expect(result).toEqual('success');
+  });
+
 });
