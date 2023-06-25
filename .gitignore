@@ -1,5 +1,6 @@
 # Dependency directory
 node_modules
 dist
+build
 coverage
 data/data.json
